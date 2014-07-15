@@ -1,8 +1,6 @@
 DNA_sequence_alignment
 ======================
 
-== Description of the Program == 
-
 This is a simple version of DNA sequence alignment written in C++, which is the procedure of comparing two (pair-wise alignment) or more (multiple alignment) DNA sequences by searching for a series of characters that are in the same order in all sequences. Two sequences can be aligned by writing them across a page in two rows. Identical or similar characters are placed in the same column, and non identical ones can either be placed in the same column as a mismatch or against a gap (-) in the other sequence. The program is written by using dynamic programming method, with the following recurrence relation:
 
 	   D[i,j] = max{ D[i-1,j-1] + pair(s[j],t[i]),
